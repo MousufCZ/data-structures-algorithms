@@ -35,3 +35,23 @@ class selectionSort:
 
             # Swap the minimum element with the first unsorted element
             arr[i], arr[min_index] = arr[min_index], arr[i]
+
+class InsertionSort:
+    def insertionSort (self, arr):
+        # Get the length of the array
+        n = len(arr)
+
+        # Iterate through each element in the array starting from the second element
+        for i in range(1, n):
+            # Select the current element as the "key"
+            key = arr[i]
+            # Set a variable "j" to the index before the current element
+            j = i - 1
+
+            # Compare and shift elements in the sorted portion to find the correct position for the current element
+            while j >= 0 and arr[j] > key:
+                arr[j + 1] = arr[j]
+                j = j - 1
+
+            # Place the key at its correct position in the sorted part
+            arr[j + 1] = key
