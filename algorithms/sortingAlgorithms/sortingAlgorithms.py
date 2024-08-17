@@ -72,6 +72,7 @@ class QuickSort:
             s = self.partition(arr, low, high)
 
             # Recursively sort the sub-arrays on both sides of the pivot
+            #left of mid-point
             self.quickSort(arr, low, s - 1)
             self.quickSort(arr, s + 1, high)
 
