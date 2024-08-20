@@ -21,7 +21,7 @@ def fisher_yates_shuffle(arr):
 
 # Selection Sort Algorithm
 class selectionSort:
-    #@staticmethod
+    #@staticmethod  
     def selectionSort(self, arr):
         n = len(arr)
         
