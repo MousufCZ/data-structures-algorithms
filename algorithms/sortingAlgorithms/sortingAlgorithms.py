@@ -108,3 +108,42 @@ class QuickSort:
 
         # Return the final position of the pivot
         return j
+
+# ============================
+# Divide and conqure sorting
+# Merge sort and Merge sort
+# ============================
+
+# Merge sort
+class MergeSort:
+    def mergeSort(self, arr, low, high):
+                # Base case: if the sub-array has one element or is empty, return it
+                if low >= high:
+                    return [arr[low]]
+                
+                # Calculate the middle index of the sub-array
+                mid = (low + high + 1) // 2
+
+                # Recursively perform merge sort on the left and right halves
+                left = self.mergeSort(arr, low, mid -1)
+                right = self.mergeSort(arr, mid, high)
+                
+                # Merge the sorted left and right halves
+                return self.merge(left, right)
+    
+    def merge(self, left, right):
+        # Merge two sorted arrays into a single sorted array
+        mergeSortedArrays = [0] * (len(left) + len(right))
+        i = j = k = 0
+
+        # Compare elements from both arrays and merge them in sorted order
+        while i < len(left) or j < len(right):
+            if i < len(left) and (j == len(right) or left[i] <= right[j]):
+                mergeSortedArrays[k] = left[i]
+                i += 1
+            else:
+                mergeSortedArrays[k] = right[j]
+                j += 1
+            k +=1
+        
+        return mergeSortedArrays
