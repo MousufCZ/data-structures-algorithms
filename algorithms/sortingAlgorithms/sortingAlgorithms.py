@@ -108,25 +108,6 @@ class QuickSort:
 
         # Return the final position of the pivot
         return j
-<<<<<<< HEAD
-    
-
-# ============================
-# Divide and conqure sorting
-# Merge sort
-# ============================
-
-class MergeSort:
-    def merge_sort(sort, arr, low, high):
-               # Base case: if the sub-array has one element or is empty, return it
-               if lo >= hi:
-                   return [arr[low]]
-               
-        # Calculate the middle index of the sub-array
-        middle = (low + high + 1) // 2
-    
-    
-=======
 
 # ============================
 # Divide and conqure sorting
@@ -166,4 +147,3 @@ class MergeSort:
             k +=1
         
         return mergeSortedArrays
->>>>>>> algorithms
