@@ -109,10 +109,6 @@ class QuickSort:
         # Return the final position of the pivot
         return j
 
-# ============================
-# Divide and conqure sorting
-# Merge sort and Merge sort
-# ============================
 
 # Merge sort
 class MergeSort:
