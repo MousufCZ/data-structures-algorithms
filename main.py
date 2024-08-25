@@ -7,7 +7,13 @@ algoInstance = searchAlgorithms.BinarySearch()
 target = 3
 
 #b = searchAlgorithms.binarySearch(arr, 0, len(arr) -1, target)
-output = algoInstance.binarySearch(arr, 0, len(arr) -1, target)
+output = algoInstance.binarySearchRecursive(arr, 0, len(arr) -1, target)
+
+"""
+The output for BinarySearch().binarySearch works correctly and returns element 2
+correctly however BinarySearch().binarySearchRecursive calls the wrong element as -1.
+I think there is a code mistake, have a look and fix.
+"""
 
 if __name__ == "__main__":
-        print(f"Binary search: target number {target} is at element {b} in the array ....")
+        print(f"Binary search: target number {target} is at element {output} in the array ....")
