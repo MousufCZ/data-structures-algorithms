@@ -13,4 +13,17 @@
 
 ### Divide and conqure
 *   Quicksort
-*   List item
+*   Merge Sort
+
+## Search algorithms
+*   Sequential search
+*   Binary search (recursive and iterative)
+
+# Data Structures
+## Stack
+*   Push
+*   Pop
+
+## Queue
+*   Push
+*   Pop
