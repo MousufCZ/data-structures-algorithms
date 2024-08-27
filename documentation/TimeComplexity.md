@@ -36,3 +36,37 @@ An **adaptive sort** is one that performs better on partially sorted inputs, and
 A **stable sort** is one that preserves the relative ordering of elements that compare as equal.
 
 ![Time Complexity](./timeComplexity.png)
+
+
+# Time and space complexity
+
+# Time Complexity
+Here's a table outlining the time and space complexities for basic operations of popular data structures:
+
+| Data Structure | Operation               | Best Case Complexity | Average Case Complexity | Worst Case Complexity | Space Complexity |
+|----------------|-------------------------|----------------------|-------------------------|------------------------|------------------|
+| Array          | Access by Index         | O(1)                 | O(1)                    | O(1)                   | O(n)             |
+|                | Modify by Index         | O(1)                 | O(1)                    | O(1)                   |                  |
+|                | Insertion (Dynamic)     | O(1) [amortized]     | O(1) [amortized]        | O(n) [amortized]       |                  |
+|                | Deletion by Index       | O(n)                 | O(n)                    | O(n)                   |                  |
+| Linked List    | Insertion at Head       | O(1)                 | O(1)                    | O(1)                   | O(n)             |
+|                | Insertion at Tail       | O(1)                 | O(1)                    | O(1)                   |                  |
+|                | Insertion at Position   | O(1) or O(n)         | O(n)                    | O(n)                   |                  |
+|                | Deletion at Head        | O(1)                 | O(1)                    | O(1)                   |                  |
+|                | Deletion at Tail        | O(n)                 | O(n)                    | O(n)                   |                  |
+|                | Deletion at Position    | O(1) or O(n)         | O(n)                    | O(n)                   |                  |
+| Stack          | Push                    | O(1)                 | O(1)                    | O(1)                   | O(n)             |
+|                | Pop                     | O(1)                 | O(1)                    | O(1)                   |                  |
+| Queue          | Enqueue                 | O(1)                 | O(1)                    | O(1)                   | O(n)             |
+|                | Dequeue                 | O(1)                 | O(1)                    | O(1)                   |                  |
+| Hash Table     | Insertion               | O(1)                 | O(1)                    | O(n)                   | O(n)             |
+|                | Deletion                | O(1)                 | O(1)                    | O(n)                   |                  |
+|                | Searching               | O(1)                 | O(1)                    | O(n)                   |                  |
+|                | Accessing               | O(1)                 | O(1)                    | O(n)                   |                  |
+| Binary Tree    | Insertion               | O(1)                 | O(log n)                | O(n)                   | O(n)             |
+|                | Deletion                | O(log n)             | O(log n)                | O(n)                   |                  |
+|                | Searching               | O(1)                 | O(log n)                | O(n)                   |                  |
+|                | Depth-First Traversal   | O(n)                 | O(n)                    | O(n)                   |                  |
+|                | Breadth-First Traversal | O(n)                 | O(n)                    | O(n)                   |                  |
+
+These complexities are generalized and may vary depending on the specific implementation and environmental factors.
