@@ -33,12 +33,8 @@ class BinarySearch:
     
 
     def binarySearchRecursive(self, arr, low, high, target):
-        # Set the initial boundaries
-        # low = 0
-        # high = len(arr) - 1
-
         # Continue searching while the search space is valid
-        while low <= high:
+        if low <= high:
             # Calculate the middle index
             middle = (low + high) // 2
 
@@ -49,34 +45,11 @@ class BinarySearch:
             
             # If the target is in the right half of mid
             elif arr[middle] < target:
-                return self.binarySearchRecursive(arr, high, middle - 1, target)
+                return self.binarySearchRecursive(arr, middle + 1, high, target)
             
             # If the target is in the left half of mid 
-            elif arr[middle] > target:
-                return self.binarySearchRecursive(arr, middle - 1, low, target)
-            
-        return -1 # Target not found
-    
-    def binarySearch(self, arr, low, high, x):
-        # Check base case
-        if high >= low:
-
-            mid = low + (high - low) // 2
-
-            # If element is present at the middle itself
-            if arr[mid] == x:
-                return mid
-
-            # If element is smaller than mid, then it
-            # can only be present in left subarray
-            elif arr[mid] > x:
-                return self.binarySearch(arr, low, mid-1, x)
-
-            # Else the element can only be present
-            # in right subarray
             else:
-                return self.binarySearch(arr, mid + 1, high, x)
-
-        # Element is not present in the array
-        else:
-            return -1
+                return self.binarySearchRecursive(arr, low, middle - 1, target)
+        
+        else:    
+            return -1 # Target not found
