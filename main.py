@@ -1,19 +1,22 @@
-from algorithms.searchAlgorithms import searchAlgorithms
+from dataStructures import stack
 
-arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-#randArr = [13, 4, 16, 8, 14, 5, 18, 11, 15, 2, 17, 12]
+dsInstance = stack.Stack()
+currentStack = dsInstance.stack
 
-algoInstance = searchAlgorithms.BinarySearch()
-target = 3
+dsInstance.isEmpty(currentStack)
 
-#b = searchAlgorithms.binarySearch(arr, 0, len(arr) -1, target)
-output = algoInstance.binarySearchRecursive(arr, 0, len(arr) -1, target)
+dsInstance.push(1)
+dsInstance.push(2)
+dsInstance.push(3)
+dsInstance.push(4)
 
-"""
-The output for BinarySearch().binarySearch works correctly and returns element 2
-correctly however BinarySearch().binarySearchRecursive calls the wrong element as -1.
-I think there is a code mistake, have a look and fix.
-"""
+dsInstance.isEmpty(currentStack)
+print(currentStack)
+
+dsInstance.pop(currentStack)
+print(currentStack)
+
+dsInstance.peek(currentStack)
 
 if __name__ == "__main__":
-        print(f"Binary search: target number {target} is at element {output} in the array ....")
+        print(f"Data structures: Current stack is {currentStack} ....")
