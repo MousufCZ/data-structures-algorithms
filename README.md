@@ -64,11 +64,3 @@ Here is an outline of the abstract data type (ADT) basic operations for popular 
 |                 | - Minimum Spanning Tree (Prim's, Kruskal's)           |
 
 Each data structure has specific operations tailored to its characteristics and use cases. These operations are fundamental for manipulating and interacting with the data stored in the respective data structure.
-
-## Stack
-*   Push
-*   Pop
-
-## Queue
-*   Push
-*   Pop
