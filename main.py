@@ -7,20 +7,20 @@ def testQueue():
         print(dsInstance.queue)
         dsInstance.enqueue(2)
         dsInstance.enqueue(3)
+        dsInstance.enqueue(3)
+        # checking if queue is full
+        dsInstance.enqueue(3)
+        dsInstance.enqueue(3)
+        dsInstance.enqueue(3)
+        dsInstance.enqueue(3)
+
         print(dsInstance.queue)
         #dsInstance.dequeue()
-        #print(dsInstance.queue)
-        #dsInstance.peek()
-        #dsInstance.rear()
-        #print(dsInstance.queue)
-        #print(f'Is queue full?: {dsInstance.isEmpty()}')
-
-        #dsInstance.dequeue()
-        #dsInstance.dequeue()
-        #print(dsInstance.queue)
-        #print(f'Is queue full?: {dsInstance.isEmpty()}')
-        #print(f'Is queue full?: {dsInstance.isFull()}')
-
+        print(dsInstance.queue)
+        dsInstance.peek()
+        dsInstance.rear()
+        print(f'Is queue empty?: {dsInstance.isEmpty()}')
+        print(f'Is queue full?: {dsInstance.isFull()}')
 
 if __name__ == "__main__":
         testQueue()
