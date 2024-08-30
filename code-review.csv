@@ -1,1 +1,2 @@
 sha,filename,url,lines,title,comment,priority,category,additional,id,private
+"58085758aa4fa86d61535688430188a2f702e6b1","/dataStructures/queue.py","","36:21-36:21","method is not returing correctly.","When checking if self.queue variable is full using the method function 'def isFull', the return is incorrect.\n\nIdentify problem and fix it.","3","Error Handling","","1e90949b-dc6f-41c6-b15b-ab45c6df03a6","0"
