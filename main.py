@@ -1,4 +1,25 @@
 from dataStructures import queue
+from dataStructures import stack
+
+def testStack():
+
+        dsInstance = stack.Stack()
+        currentStack = dsInstance.stack
+
+        dsInstance.isEmpty(currentStack)
+
+        dsInstance.push(1)
+        dsInstance.push(2)
+        dsInstance.push(3)
+        dsInstance.push(4)
+
+        dsInstance.isEmpty(currentStack)
+        print(currentStack)
+
+        dsInstance.pop(currentStack)
+        print(currentStack)
+
+        dsInstance.peek(currentStack)
 
 def testQueue():                
         dsInstance = queue.Queue(5)
