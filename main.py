@@ -1,22 +1,26 @@
-from dataStructures import stack
+from dataStructures import queue
 
-dsInstance = stack.Stack()
-currentStack = dsInstance.stack
+def testQueue():                
+        dsInstance = queue.Queue(5)
+        dsInstance.enqueue(463)
+        dsInstance.enqueue(243)
+        print(dsInstance.queue)
+        dsInstance.enqueue(2)
+        dsInstance.enqueue(3)
+        print(dsInstance.queue)
+        #dsInstance.dequeue()
+        #print(dsInstance.queue)
+        #dsInstance.peek()
+        #dsInstance.rear()
+        #print(dsInstance.queue)
+        #print(f'Is queue full?: {dsInstance.isEmpty()}')
 
-dsInstance.isEmpty(currentStack)
+        #dsInstance.dequeue()
+        #dsInstance.dequeue()
+        #print(dsInstance.queue)
+        #print(f'Is queue full?: {dsInstance.isEmpty()}')
+        #print(f'Is queue full?: {dsInstance.isFull()}')
 
-dsInstance.push(1)
-dsInstance.push(2)
-dsInstance.push(3)
-dsInstance.push(4)
-
-dsInstance.isEmpty(currentStack)
-print(currentStack)
-
-dsInstance.pop(currentStack)
-print(currentStack)
-
-dsInstance.peek(currentStack)
 
 if __name__ == "__main__":
-        print(f"Data structures: Current stack is {currentStack} ....")
+        testQueue()
