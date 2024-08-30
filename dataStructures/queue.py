@@ -35,47 +35,10 @@ class Queue:
 
     def isFull(self):
         if len(self.queue) == self.capacity:    
-            return 
+            return
 
     def isEmpty(self):
         if len(self.queue) == 0:
             return
-    
-def test_queue():                    # Function to test the Queue class
-    # Create a queue with capacity 5
-    q = Queue(5)
-
-    # Enqueue some elements
-    q.enqueue(1)
-    q.enqueue(2)
-    q.enqueue(3)
-    q.enqueue(4)
-    q.enqueue(5)
-
-    # Try to enqueue when the queue is full
-    q.enqueue(6)
-
-    # Peek at the front element
-    q.peek()
-
-    # Check the rear element
-    q.rear()
-
-    # Dequeue some elements
-    q.dequeue()
-    q.dequeue()
-    q.dequeue()
-    q.dequeue()
-    q.dequeue()
-
-    # Try to dequeue when the queue is empty
-    q.dequeue()
-
-    # Check if the queue is empty
-    print("Is queue empty?", q.isEmpty())
-
-    # Check if the queue is full
-    print("Is queue full?", q.isFull())
-
-if __name__ == "__main__":
-    test_queue()  # Call the test_queue function when the script is executed
+        else:
+            return
