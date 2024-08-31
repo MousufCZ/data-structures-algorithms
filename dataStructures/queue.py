@@ -5,10 +5,11 @@ class Queue:
         self.queue = []
 
     def enqueue(self, item):
-        if not self.isEmpty():
+        if len(self.queue) < self.capacity:
             self.queue.append(item)
             print(f'Enqueued: {item}')
         else:
+            self.isFull()
             print('Queue is full')
 
     def dequeue(self):
@@ -34,11 +35,7 @@ class Queue:
             print("Queue is empty.")
 
     def isFull(self):
-        if len(self.queue) == self.capacity:    
-            return
+        return len(self.queue) == self.capacity   
 
     def isEmpty(self):
-        if len(self.queue) == 0:
-            return
-        else:
-            return
+        return len(self.queue) == 0

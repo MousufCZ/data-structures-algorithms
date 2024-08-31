@@ -7,7 +7,7 @@ def testStack():
         currentStack = dsInstance.stack
 
         dsInstance.isEmpty(currentStack)
-
+ 
         dsInstance.push(1)
         dsInstance.push(2)
         dsInstance.push(3)
@@ -28,20 +28,14 @@ def testQueue():
         print(dsInstance.queue)
         dsInstance.enqueue(2)
         dsInstance.enqueue(3)
-        dsInstance.enqueue(3)
-        # checking if queue is full
-        dsInstance.enqueue(3)
-        dsInstance.enqueue(3)
-        dsInstance.enqueue(3)
-        dsInstance.enqueue(3)
-
+        ## checking if queue is full by enqueuing more elements
         print(dsInstance.queue)
-        #dsInstance.dequeue()
+        dsInstance.dequeue()
         print(dsInstance.queue)
         dsInstance.peek()
         dsInstance.rear()
         print(f'Is queue empty?: {dsInstance.isEmpty()}')
         print(f'Is queue full?: {dsInstance.isFull()}')
-
+ 
 if __name__ == "__main__":
         testQueue()
