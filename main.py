@@ -1,6 +1,6 @@
 from dataStructures import queue
 from dataStructures import stack
-from dataStructures import heap
+from dataStructures import maxHeap
 
 def testStack():
 
