@@ -27,7 +27,8 @@ class MaxHeap:
         maxElement = self.heap[0]
         self.heap[0] = self.heap[-1]
         del self.heap[-1]
-        #self.
+        self.heapifyDown(0)
+        return maxElement
 
     def heapifyDown(self, i):
         maxIndex = i
