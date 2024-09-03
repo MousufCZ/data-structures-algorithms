@@ -1,6 +1,7 @@
 from dataStructures import queue
 from dataStructures import stack
 from dataStructures import maxHeap
+from dataStructures import minHeap
 
 def testStack():
 
@@ -38,8 +39,8 @@ def testQueue():
         print(f'Is queue empty?: {dsInstance.isEmpty()}')
         print(f'Is queue full?: {dsInstance.isFull()}')
  
-def testHeap():
-        dsInstance = heap.MaxHeap()
+def testMaxHeap():
+        dsInstance = maxHeap.MaxHeap()
 
         dsInstance.insert(5)
         dsInstance.insert(3)
@@ -53,6 +54,18 @@ def testHeap():
         print(f"Extract Max: {dsInstance.extractMax()}")
         print(dsInstance.heap)
 
+def testMinHeap():
+        dsInstance = minHeap.MinHeap()
+        dsInstance.insert(5)
+        dsInstance.insert(3)
+        dsInstance.insert(8)
+        dsInstance.insert(1)
+        dsInstance.insert(10)
+        dsInstance.extractMin()
+        print(dsInstance.heap)
+        print(f'The heap peek is: {dsInstance.peek()}')
+
+
 
 if __name__ == "__main__":
-        testHeap()
+        testMinHeap()
