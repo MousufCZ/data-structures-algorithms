@@ -2,6 +2,7 @@ from dataStructures import queue
 from dataStructures import stack
 from dataStructures import maxHeap
 from dataStructures import minHeap
+from dataStructures import singlyLinkedList
 
 def testStack():
 
@@ -65,7 +66,10 @@ def testMinHeap():
         print(dsInstance.heap)
         print(f'The heap peek is: {dsInstance.peek()}')
 
-
+def testSinglyLinkedList():
+        dsInstance = singlyLinkedList.LinkedList()
+        dsInstance.insert(2)
+        print(dsInstance.head)
 
 if __name__ == "__main__":
-        testMinHeap()
+        testSinglyLinkedList()
