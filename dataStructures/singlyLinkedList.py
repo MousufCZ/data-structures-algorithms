@@ -66,5 +66,3 @@ class SinglyLinkedList:
             print(currentNode.data, end=" -> ")
             currentNode = currentNode.next
         print("End of List")
-
-# ============================

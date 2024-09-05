@@ -67,25 +67,25 @@ def testMinHeap():
         print(f'The heap peek is: {dsInstance.peek()}')
 
 def testSinglyLinkedList():
-        ll = singlyLinkedList.SinglyLinkedList()
-        ll.append(2)
-        ll.traverseList()
-        ll.append(1)
-        ll.append(2)
-        ll.append(3)
-        ll.append(4)
-        ll.append(5)
+        dsInstance = singlyLinkedList.SinglyLinkedList()
+        dsInstance.append(2)
+        dsInstance.traverseList()
+        dsInstance.append(1)
+        dsInstance.append(2)
+        dsInstance.append(3)
+        dsInstance.append(4)
+        dsInstance.append(5)
         print("Original Linked List:")
-        ll.traverseList()  # Print the original linked list
-        ll.prepend(0)
+        dsInstance.traverseList()  # Print the original linked list
+        dsInstance.prepend(0)
         print("\nLinked List after prepending 0:")
-        ll.traverseList()  # Print the linked list after prepending
-        ll.insertAtPosition(2, 2.5)
+        dsInstance.traverseList()  # Print the linked list after prepending
+        dsInstance.insertAtPosition(2, 2.5)
         print("\nLinked List after inserting 2.5 at position 2:")
-        ll.traverseList()  # Print the linked list after inserting
-        ll.deleteNode(3)
+        dsInstance.traverseList()  # Print the linked list after inserting
+        dsInstance.deleteNode(3)
         print("\nLinked List after deleting node with key 3:")
-        ll.traverseList() 
+        dsInstance.traverseList() 
 
 if __name__ == "__main__":
         testSinglyLinkedList()
