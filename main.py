@@ -88,4 +88,5 @@ def testSinglyLinkedList():
         dsInstance.traverseList() 
 
 if __name__ == "__main__":
-        testSinglyLinkedList()
+#        testSinglyLinkedList()
+        print(0)
