@@ -30,4 +30,21 @@ class doublyLinkedList:
             current.next = new_node
             new_node.prev = current
     
-#    def insert_at_position(self, position, data):
+    def insert_at_position(self, position, data):
+        if position <= 0:
+            self.insert_at_head(data)
+            return
+        
+        new_node = Node(data)
+        current = self.head
+
+        for _ in range(position -1):
+            if current is None:
+                return
+            
+        new_node.next = current.next
+        new_node.prev = current
+
+        if current.next:
+            current.next.prev = new_node
+        current.next = new_node
