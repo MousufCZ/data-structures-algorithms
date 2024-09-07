@@ -87,6 +87,9 @@ def testSinglyLinkedList():
         print("\nLinked List after deleting node with key 3:")
         dsInstance.traverseList() 
 
+def testDoublyLinkedList():
+        return
+
 if __name__ == "__main__":
 #        testSinglyLinkedList()
         print(0)
