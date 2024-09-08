@@ -1,1 +1,0 @@
-# This script is to test db connections
