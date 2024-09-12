@@ -4,7 +4,7 @@ class Node:
         self.next = None
         self.prev = None
 
-class doublyLinkedList:
+class doublyLinkedList:  
     def __init__(self):
         self.head = None
 
@@ -69,4 +69,5 @@ class doublyLinkedList:
                 current = current.next
             current.next = None
 
-    # Deletion at Specific Position
+    def delete_at_position(self, position):
+        
