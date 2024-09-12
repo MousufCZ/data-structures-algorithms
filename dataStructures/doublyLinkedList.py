@@ -4,7 +4,7 @@ class Node:
         self.next = None
         self.prev = None
 
-class doublyLinkedList:  
+class DoublyLinkedList:  
     def __init__(self):
         self.head = None
 
@@ -70,4 +70,26 @@ class doublyLinkedList:
             current.next = None
 
     def delete_at_position(self, position):
-        return
+        if self.head is None:
+            return
+        if position <= 0:
+            self.delete_at_head()
+            return
+        current = self.head
+        for _ in range(position - 1):
+            if current is None:
+                return
+            current = current.next
+        if current is None:
+            return
+        if current.next:
+            current.next = current.next.next
+            if current.next:
+                current.next.prev = current
+    
+    def traverse(self):
+        current = self.head
+        while current:
+            print(current.data, end=" -> ")
+            current = current.next
+        print("None")

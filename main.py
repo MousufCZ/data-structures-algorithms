@@ -3,6 +3,7 @@ from dataStructures import stack
 from dataStructures import maxHeap
 from dataStructures import minHeap
 from dataStructures import singlyLinkedList
+from dataStructures import doublyLinkedList
 
 def testStack():
 
@@ -88,8 +89,20 @@ def testSinglyLinkedList():
         dsInstance.traverseList() 
 
 def testDoublyLinkedList():
-        return
+        dsInstance = doublyLinkedList.DoublyLinkedList()
+        dsInstance.insert_at_head(1)
+        dsInstance.insert_at_head(2)
+        dsInstance.insert_at_tail(3)
+        dsInstance.traverse()
+        dsInstance.insert_at_position(2, 4)
+        dsInstance.traverse()
+        dsInstance.delete_at_head()
+        dsInstance.traverse()
+        dsInstance.delete_at_tail()
+        dsInstance.traverse()
+        dsInstance.delete_at_position(0)
+        dsInstance.traverse()
+        
 
 if __name__ == "__main__":
-#        testSinglyLinkedList()
-        print(0)
+        testDoublyLinkedList()
