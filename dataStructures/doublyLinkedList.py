@@ -69,5 +69,5 @@ class doublyLinkedList:
                 current = current.next
             current.next = None
 
-    #def delete_at_position(self, position):
-        
+    def delete_at_position(self, position):
+        return
