@@ -4,6 +4,7 @@ from dataStructures import maxHeap
 from dataStructures import minHeap
 from dataStructures import singlyLinkedList
 from dataStructures import doublyLinkedList
+from dataStructures import circularLinkedList
 
 def testStack():
 
@@ -103,6 +104,13 @@ def testDoublyLinkedList():
         dsInstance.delete_at_position(0)
         dsInstance.traverse()
         
+def testCircularLinkedList():
+        dsInstance = circularLinkedList.CircularLinkedList()
+        dsInstance.insert_at_head(1)
+        dsInstance.insert_at_head(2)
+        dsInstance.insert_at_tail(3)
+        dsInstance.traverse()
+        dsInstance.insert_at_head(4)
 
 if __name__ == "__main__":
         testDoublyLinkedList()

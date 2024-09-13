@@ -13,10 +13,10 @@ class CircularLinkedList:
             self.head = new_node
             new_node.next = self.head
         else:
-            temp = self.head
-            while temp.next != self.head:
-                temp = temp.next
-            temp.next = new_node
+            current = self.head
+            while current.next != self.head:
+                current = current.next
+            current.next = new_node
             new_node.next = self.head
             self.head = new_node
 
@@ -26,10 +26,10 @@ class CircularLinkedList:
             self.head = new_node
             new_node.next = self.head
         else:
-            temp = self.head
-            while temp.next != self.head:
-                temp = temp.next
-            temp.next = new_node
+            current = self.head
+            while current.next != self.head:
+                current = current.next
+            current.next = new_node
             new_node.next = self.head
 
     def insert_at_position(self, position, data):
@@ -37,13 +37,13 @@ class CircularLinkedList:
             self.insert_at_head(data)
             return
         new_node = Node(data)
-        temp = self.head
+        current = self.head
         for _ in range(position - 1):
-            if temp.next == self.head:
+            if current.next == self.head:
                 break
-            temp = temp.next
-        new_node.next = temp.next
-        temp.next = new_node
+            current = current.next
+        new_node.next = current.next
+        current.next = new_node
     
     def delete_at_head(self):
         if not self.head:
@@ -51,10 +51,10 @@ class CircularLinkedList:
         if self.head.next == self.head:
             self.head = None
         else:
-            temp = self.head
-            while temp.next != self.head:
-                temp = temp.next
-            temp.next = self.head.next
+            current = self.head
+            while current.next != self.head:
+                current = current.next
+            current.next = self.head.next
             self.head = self.head.next
     
     def delete_at_tail(self):
@@ -63,11 +63,11 @@ class CircularLinkedList:
         if self.head.next == self.head:
             self.head = None
         else:
-            temp = self.head
+            current = self.head
             prev = None
-            while temp.next != self.head:
-                prev = temp
-                temp = temp.next
+            while current.next != self.head:
+                prev = current
+                current = current.next
             prev.next = self.head
     
     def delete_at_position(self, position):
@@ -76,13 +76,20 @@ class CircularLinkedList:
         if position <= 0:
             self.delete_at_head()
             return
-        temp = self.head
+        current = self.head
         prev = None
         for _ in range(position):
-            prev = temp
-            temp = temp.next
-            if temp == self.head:
+            prev = current
+            current = current.next
+            if current == self.head:
                 return
-        prev.next = temp.next
-
-        
+        prev.next = current.next
+    
+    def traverse(self):
+        current = self.head
+        while current:
+            print(current.data, end=" -> ")
+            current = current.next
+            if current == self.head:
+                break
+        print("None")
