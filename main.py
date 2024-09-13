@@ -110,7 +110,14 @@ def testCircularLinkedList():
         dsInstance.insert_at_head(2)
         dsInstance.insert_at_tail(3)
         dsInstance.traverse()
-        dsInstance.insert_at_head(4)
+        dsInstance.insert_at_position(2, 4)
+        dsInstance.traverse()
+        dsInstance.delete_at_head()
+        dsInstance.traverse()
+        dsInstance.delete_at_tail()
+        dsInstance.traverse()
+        dsInstance.delete_at_position(1)
+        dsInstance.traverse()
 
 if __name__ == "__main__":
-        testDoublyLinkedList()
+        testCircularLinkedList()
