@@ -72,6 +72,7 @@ class CircularLinkedList:
     
     def delete_at_position(self, position):
         if not self.head:
+            # Check commit
             return
         if position <= 0:
             self.delete_at_head()
