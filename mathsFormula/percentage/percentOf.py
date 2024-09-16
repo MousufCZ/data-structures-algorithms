@@ -1,4 +1,4 @@
-class PercentageOf:
+class PercentageOfNumber:
     def __init__(self, orig_num_input, perc_input):
         self.orig_num_input = orig_num_input
         self.perc_input = perc_input
@@ -19,7 +19,7 @@ class PercentageOf:
         perc_to_dec = self.input_perc_to_dec()
         originalNum = self.orig_num_input
         perc_per_section = originalNum * perc_to_dec
-        print(f"Total of the percentage {self.perc_input}% of {self.orig_num_input} is: {perc_per_section}")
+        #print(f"Total of the percentage {self.perc_input}% of {self.orig_num_input} is: {perc_per_section}")
         return perc_per_section
     
     def total_after_perc_increase(self):
@@ -38,11 +38,15 @@ class PercentageOf:
         print(f"{perc_input}% decrease of {originalNum} is: {total_after_perc_decrease}")
         return total_after_perc_decrease
 
-    
-    
-if __name__ == "__main__":
-    originalNum = 1200000
+def testPercentageOfNumber():
+    originalNum1 = 1200000
     percentage = 20.00
-    test = PercentageOf(originalNum, percentage)
+    test = PercentageOfNumber(originalNum1, percentage)
+    test.input_original_number()
+    test.input_percentage
     test.total_after_perc_increase()
     test.total_after_perc_decrease()
+    
+
+if __name__ == "__main__":
+    testPercentageOfNumber()
