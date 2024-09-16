@@ -1,10 +1,10 @@
 from dataStructures import queue
 from dataStructures import stack
-from dataStructures import maxHeap
-from dataStructures import minHeap
-from dataStructures import singlyLinkedList
-from dataStructures import doublyLinkedList
-from dataStructures import circularLinkedList
+from dataStructures.heap import maxHeap
+from dataStructures.heap import minHeap
+from dataStructures.linkedList import singlyLinkedList
+from dataStructures.linkedList import doublyLinkedList
+from dataStructures.linkedList import circularLinkedList
 
 def testStack():
 
