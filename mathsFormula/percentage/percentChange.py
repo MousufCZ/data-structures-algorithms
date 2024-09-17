@@ -1,5 +1,3 @@
-import percentOf
-
 """
 This class takes two @paras to calculate the percentage change of a given 2
 numbers.

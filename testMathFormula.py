@@ -1,5 +1,5 @@
-import percentOf
-import percentChange
+from mathsFormula.percentage import percentOf
+from mathsFormula.percentage import percentChange
 
 
 def testPercentageOfNumber():
@@ -19,4 +19,5 @@ def test_percent_change():
 
 if __name__ == "__main__":
     testPercentageOfNumber()
+    print("########")
     test_percent_change()
