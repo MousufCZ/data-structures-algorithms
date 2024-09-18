@@ -20,6 +20,7 @@ class Stack:
             return (str(-maxsize -1), print(f"{stack} nothing in stack")) # return minus infinite
         return print(f'Pop from stack: {self.stack.pop()}')
     
+
     # Function to return the top from stack without removing it
     def peek(self, stack):
         if (self.isEmpty(stack)):
