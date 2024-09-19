@@ -6,6 +6,7 @@ from dataStructures.linkedList import singlyLinkedList
 from dataStructures.linkedList import doublyLinkedList
 from dataStructures.linkedList import circularLinkedList
 from dataStructures.hashTable import linkedChain
+from dataStructures.hashTable import linearProbing
 
 def testStack():
 
@@ -129,5 +130,13 @@ def testLinkedChainHashMap():
         #print(dsInstance.table)
         print(f"Delete banana: {dsInstance.delete('banana')}")
         print(dsInstance.table)
-        print(dsInstance.search())
-        print(dsInstance.access("banana"))
+        print(dsInstance.search("apple"))
+
+def testLinearProbing():
+        dsInstance = linearProbing.LinearProbingOpenAddressing()
+        dsInstance.insert("apple", 5)
+        dsInstance.insert("banana", 10)
+        dsInstance.insert("apple", 7)
+        print(f"Insert Mango: {dsInstance.insert('mango', 9)}")
+        print(f"Delete banana: {dsInstance.delete('banana')}")
+        print(dsInstance.search("apple"))

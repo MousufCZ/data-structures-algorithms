@@ -23,11 +23,11 @@ class LinkedChainHashMap:
             current.next = Node(key, value)
     
     def delete(self, key):
-        index = self.hash_function(key)  # Calculate the index using the hash function
-        current = self.table[index]  # Initialize current node
-        prev = None  # Initialize previous node
+        index = self.hash_function(key)
+        current = self.table[index]
+        prev = None
         while current:
-            if current.key == key:  # If the key matches, delete the node
+            if current.key == key:
                 if prev:
                     prev.next = current.next
                 else:
@@ -38,12 +38,12 @@ class LinkedChainHashMap:
             current = current.next
 
     def search(self, key):
-        index = self.hash_function(key)  # Calculate the index using the hash function
+        index = self.hash_function(key)
         key_search_count = 0
-        current = self.table[index]  # Initialize current node
+        current = self.table[index]
         print(f"Seeking table index on search: \n {current}")
         while current:
-            if current.key == key:  # If the key matches, return the value
+            if current.key == key: 
                 return current.value, current.key
             current = current.next
             key_search_count =+ 1
