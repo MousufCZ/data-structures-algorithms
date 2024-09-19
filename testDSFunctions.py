@@ -5,6 +5,7 @@ from dataStructures.heap import minHeap
 from dataStructures.linkedList import singlyLinkedList
 from dataStructures.linkedList import doublyLinkedList
 from dataStructures.linkedList import circularLinkedList
+from dataStructures.hashTable import linkedChain
 
 def testStack():
 
@@ -118,3 +119,9 @@ def testCircularLinkedList():
         dsInstance.traverse()
         dsInstance.delete_at_position(1)
         dsInstance.traverse()
+
+def testLinkedChainHashMap():
+        dsInstance = linkedChain.LinkedChainHashMap()
+        dsInstance.insert("apple", 5)
+        dsInstance.insert("banana", 10)
+        dsInstance.insert("banana", 7)
