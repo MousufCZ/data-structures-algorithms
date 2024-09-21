@@ -6,38 +6,38 @@ individual mapping for 'Keys' and 'Values'
 class QuadraticProbingOpenAddressing:
     def __init__(self, size=100):
         self.size = size
-        self.keys = [None] * self.size  # Array to store keys
-        self.values = [None] * self.size  # Array to store values
+        self.keys = [None] * self.size
+        self.values = [None] * self.size
 
     def _hash_function(self, key):
         return hash(key) % self.size
 
     def insert(self, key, value):
-        index = self._hash_function(key)  # Get the initial index using the hash function
-        offset = 1  # Initialize the quadratic probing offset
-        while self.keys[index] is not None:  # Continue until an empty slot is found
-            index = (index + offset ** 2) % self.size  # Quadratic probing for the next index
-            offset += 1  # Increment the offset for the next iteration
-        self.keys[index] = key  # Insert the key into the keys array
-        self.values[index] = value  # Insert the corresponding value into the values array
+        index = self._hash_function(key)
+        offset = 1
+        while self.keys[index] is not None:
+            index = (index + offset ** 2) % self.size
+            offset += 1
+        self.keys[index] = key
+        self.values[index] = value
 
     def delete(self, key):
-        index = self._hash_function(key)  # Get the initial index using the hash function
-        offset = 1  # Initialize the quadratic probing offset
-        while self.keys[index] is not None:  # Continue until an empty slot is found
-            if self.keys[index] == key:  # Check if the key matches
-                self.keys[index] = None  # Set the key to None to delete it
-                self.values[index] = None  # Set the corresponding value to None
-                return  # Exit the function after deletion
-            index = (index + offset ** 2) % self.size  # Quadratic probing for the next index
-            offset += 1  # Increment the offset for the next iteration
+        index = self._hash_function(key)
+        offset = 1
+        while self.keys[index] is not None:
+            if self.keys[index] == key:
+                self.keys[index] = None
+                self.values[index] = None
+                return
+            index = (index + offset ** 2) % self.size
+            offset += 1
 
     def search(self, key):
-        index = self._hash_function(key)  # Get the initial index using the hash function
-        offset = 1  # Initialize the quadratic probing offset
-        while self.keys[index] is not None:  # Continue until an empty slot is found
-            if self.keys[index] == key:  # Check if the key matches
-                return self.values[index]  # Return the corresponding value
-            index = (index + offset ** 2) % self.size  # Quadratic probing for the next index
-            offset += 1  # Increment the offset for the next iteration
-        return None  # Return None if the key is not found
+        index = self._hash_function(key)
+        offset = 1
+        while self.keys[index] is not None:
+            if self.keys[index] == key:
+                return self.values[index]
+            index = (index + offset ** 2) % self.size
+            offset += 1
+        return None
