@@ -1,4 +1,4 @@
-""" 
+"""
 Quadratic probing implemented differently from Linked Chain.
 It isn't using node based bapping using 'Table', but creating
 individual mapping for 'Keys' and 'Values'
@@ -11,6 +11,7 @@ class QuadraticProbingOpenAddressing:
 
     def _hash_function(self, key):
         return hash(key) % self.size
+
 
     def insert(self, key, value):
         index = self._hash_function(key)
