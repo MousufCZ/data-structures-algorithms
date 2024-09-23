@@ -9,6 +9,7 @@ class FileManupilation:
         #self = self
 
     def createNewFile(self):
+        # use f = open x
         #f = open("database/randInt.txt", "w")
         f = open("database/randInt.txt", "x")
 
