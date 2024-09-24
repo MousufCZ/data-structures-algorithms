@@ -11,10 +11,10 @@ class FileManupilation:
     def createNewFile(self):
         # use f = open x
         #f = open("database/randInt.txt", "w")
-        f = open("database/randInt.txt", "x")
+        f = open("database/randInt/randInt.txt", "x")
 
     def generate_rand_no_to_file(self):
-        f = open("database/randInt.txt", "w")
+        f = open("database//randInt/randInt.txt", "w")
         for i in range(100):
             f.write(f"{int(random.randint(1,100))} \n")
         f.close()
