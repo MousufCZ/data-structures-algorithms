@@ -67,3 +67,8 @@ Each data structure has specific operations tailored to its characteristics and 
 
 # Memory allocation code
 ## Basic code to understand malloc
+
+
+# Development Progress / To-Do
+*   dsaImplementation Test.
+*   dsa ..
