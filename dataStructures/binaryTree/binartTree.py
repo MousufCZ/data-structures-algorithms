@@ -17,6 +17,5 @@ class BinaryTree:
             self.root = TreeNode(data)
         else:
             # Otherwise, recursively find the appropriate position to insert the new node
+#            self.insert_recursive(data, self.root)
             self.insert_recursive(data, self.root)
-
-    
