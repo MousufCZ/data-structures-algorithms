@@ -33,7 +33,7 @@ Checking what's up
 Committing
 ----
 
-`git add .` - Add all current changes to the staging area, ready for the next commit.
+`git add .` - Add all current changes to the staging area, ready for the next commit. **test--
 
 `git add -p <filename>` - Add some changes in `<filename>` to the staging area, ready for the next commit.
 
