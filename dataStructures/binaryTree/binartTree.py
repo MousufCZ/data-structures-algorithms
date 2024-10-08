@@ -36,3 +36,9 @@ class BinaryTree:
                 current_node.right = TreeNode(data)
             else:
                 self._insert_recursive(data, current_node.right)
+
+    def delete(self, data):
+        """
+        Deletion operation to remove a node with the given data from the binary tree.
+        """
+        self.root = self._delete_recursive(data, self.root)
