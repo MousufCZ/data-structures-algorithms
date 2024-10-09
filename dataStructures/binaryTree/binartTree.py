@@ -42,3 +42,29 @@ class BinaryTree:
         Deletion operation to remove a node with the given data from the binary tree.
         """
         self.root = self._delete_recursive(data, self.root)
+
+    def _delete_recursive(self, data, current_node):
+        """
+        Recursive helper function to delete a node with the given data from the binary tree.
+        """
+        if current_node is None:
+            return current_node
+
+        if data < current_node.data:
+            current_node.left = self._delete_recursive(data, current_node.left)
+        elif data > current_node.data:
+            current_node.right = self._delete_recursive(data, current_node.right)
+        else:
+            # Node to be deleted found
+            if current_node.left is None:
+                return current_node.right
+            elif current_node.right is None:
+                return current_node.left
+
+            # Node has two children, find the successor (minimum value in the right subtree)
+            current_node.data = self._find_min(current_node.right)
+            # Delete the successor from the right subtree
+            current_node.right = self._delete_recursive(current_node.data, current_node.right)
+
+        return current_node
+    
