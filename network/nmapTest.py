@@ -23,6 +23,7 @@ def testScan():
     print("Scanner target information: \n", nm[target])
 
 # https://pypi.org/project/python-nmap/
+# https://www.studytonight.com/network-programming-in-python/integrating-port-scanner-with-nmap
 def scanPorts():
     for host in nm.all_hosts():
         print('----------------------------------------------------')
