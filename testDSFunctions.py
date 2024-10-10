@@ -1,5 +1,5 @@
-from dataStructures import queue
-from dataStructures import stack
+from dataStructures.queue import queue
+from dataStructures.stack import stack
 from dataStructures.heap import maxHeap
 from dataStructures.heap import minHeap
 from dataStructures.linkedList import singlyLinkedList
