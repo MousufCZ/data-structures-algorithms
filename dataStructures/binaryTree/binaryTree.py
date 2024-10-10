@@ -107,8 +107,6 @@ class BinaryTree:
 def test_binary_tree():
     bt = BinaryTree()
     bt.insert(5)
-
-    
     bt.insert(3)
     bt.insert(7)
     bt.insert(2)
@@ -132,5 +130,5 @@ def test_binary_tree():
     print("\nIn-order Traversal after deleting 3:")
     bt.depth_first_traversal("inorder")
 
-if __name__ == "__main__":
-    test_binary_tree()
+    if __name__ == "__main__":
+        test_binary_tree()

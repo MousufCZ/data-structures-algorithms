@@ -7,6 +7,7 @@ from dataStructures.linkedList import doublyLinkedList
 from dataStructures.linkedList import circularLinkedList
 from dataStructures.hashTable import linkedChain
 from dataStructures.hashTable import linearProbing
+from dataStructures.binaryTree import binaryTree
 
 def testStack():
 
@@ -140,3 +141,29 @@ def testLinearProbing():
         print(f"Insert Mango: {dsInstance.insert('mango', 9)}")
         print(f"Delete banana: {dsInstance.delete('banana')}")
         print(dsInstance.search("apple"))
+
+def testBinaryTree():
+        bt = binaryTree.BinaryTree()
+        bt.insert(5)
+        bt.insert(3)
+        bt.insert(7)
+        bt.insert(2)
+        bt.insert(4)
+        bt.insert(6)
+        bt.insert(8)
+
+        print("In-order Traversal:")
+        bt.depth_first_traversal("inorder")
+
+        print("\nPre-order Traversal:")
+        bt.depth_first_traversal("preorder")
+
+        print("\nPost-order Traversal:")
+        bt.depth_first_traversal("postorder")
+
+        print("\nSearching for value 4:", bt.search(4).data)
+        print("Searching for value 10:", bt.search(10))
+
+        bt.delete(3)
+        print("\nIn-order Traversal after deleting 3:")
+        bt.depth_first_traversal("inorder")
