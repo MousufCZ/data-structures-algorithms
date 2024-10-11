@@ -37,6 +37,8 @@ def scanPorts():
             lport.sort()
             for port in lport:
                 print ('port : %s\tstate : %s' % (port, nm[host][proto][port]['state']))
-
+#
+#
+#
 if __name__ == "__main__":
     scanPorts()
