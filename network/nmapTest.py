@@ -23,4 +23,8 @@ def testScan():
     print("Scanner target information: \n", nm[target])
 
 if __name__ == "__main__":
+<<<<<<< HEAD
+=======
+    #scanPorts()
+>>>>>>> 498f0ce (Network.)
     testScan()
