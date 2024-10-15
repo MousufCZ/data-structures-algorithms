@@ -1,7 +1,5 @@
 import nmap
 
-# Testing git commands.
-
 # Create an instance of the `nmap.PortScanner` class
 nm = nmap.PortScanner()
 
@@ -25,8 +23,4 @@ def testScan():
     print("Scanner target information: \n", nm[target])
 
 if __name__ == "__main__":
-<<<<<<< HEAD
-=======
-    #scanPorts()
->>>>>>> 498f0ce (Network.)
     testScan()
