@@ -1,5 +1,7 @@
 import nmap
 
+# Testing git commands.
+
 # Create an instance of the `nmap.PortScanner` class
 nm = nmap.PortScanner()
 
