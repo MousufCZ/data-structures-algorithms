@@ -50,9 +50,11 @@ def testMaxHeap():
 
         dsInstance.insert(5)
         dsInstance.insert(3)
+        dsInstance.insert(14)
         dsInstance.insert(8)
         dsInstance.insert(1)
         dsInstance.insert(10)
+        dsInstance.insert(12)
         print(dsInstance.heap)
         
         print(f"peek: {dsInstance.peek()}")
@@ -64,9 +66,11 @@ def testMinHeap():
         dsInstance = minHeap.MinHeap()
         dsInstance.insert(5)
         dsInstance.insert(3)
+        dsInstance.insert(14)
         dsInstance.insert(8)
         dsInstance.insert(1)
         dsInstance.insert(10)
+        dsInstance.insert(12)
         dsInstance.extractMin()
         print(dsInstance.heap)
         print(f'The heap peek is: {dsInstance.peek()}')
