@@ -7,4 +7,4 @@
 -- (4, 'Samuel Taylor'),
 -- (5, 'Susanne Sawyer');
 
-SELECT * FROM ProjectMoon
+-- SELECT * FROM ProjectMoon
