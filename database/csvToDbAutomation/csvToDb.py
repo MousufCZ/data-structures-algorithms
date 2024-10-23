@@ -2,6 +2,8 @@ import pandas as pd
 import sqlite3
 import os
 
+class 
+
 class CSVtoSQLiteConverter:
     def __init__(self, csv_dir, db_path):
         self.csv_dir = csv_dir  # Directory where CSV files are stored
@@ -10,7 +12,7 @@ class CSVtoSQLiteConverter:
     def convert_all_csvs_to_db(self):
         try:
             # Create a connection to the SQLite database
-            conn = sqlite3.connect(self.db_path)
+             conn = sqlite3.connect(self.db_path)
 
             # Loop through all files in the CSV directory
             for file_name in os.listdir(self.csv_dir):
