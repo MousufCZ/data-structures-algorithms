@@ -38,7 +38,7 @@ class CSVtoSQLiteConverter:
 # Driver function
 def main():
     # Define paths for the CSV directory and the single DB file
-    csv_directory = '/home/mousuf/dsa/database/formula1/f1Database/'
+    csv_directory = '.database/formula1/f1'
     db_path = './database/formula1/f1Database/formula1_data2.db'  # Single .db file for all tables
 
     # Instantiate the CSV to SQLite converter class
