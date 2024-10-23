@@ -1,7 +1,7 @@
 import pandas as pd
 import sqlite3
 import os
-
+'''
 class CSVtoSQLiteConverter:
     def __init__(self, csv_dir, db_path):
         self.csv_dir = csv_dir
@@ -34,11 +34,13 @@ class CSVtoSQLiteConverter:
         if not os.path.exists(db_dir):
             os.makedirs(db_dir)
             print(f"Created directory {db_dir}")
+'''
+
 
 # Driver function
 def main():
     # Define paths for the CSV directory and the single DB file
-    csv_directory = '.database/formula1/f1'
+    csv_directory = '.database/formula1/f1Database/f1csvs/'
     db_path = './database/formula1/f1Database/formula1_data2.db'  # Single .db file for all tables
 
     # Instantiate the CSV to SQLite converter class
