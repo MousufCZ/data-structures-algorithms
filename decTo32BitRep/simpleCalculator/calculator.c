@@ -17,9 +17,9 @@ double multiply(double a, double b)
 
 double divide(double a, double b)
 {
-    if (b != 0)
+    if (b != 0) {
         return a / b;
-    else {
+    } else {
         return 0;
     }
 }
