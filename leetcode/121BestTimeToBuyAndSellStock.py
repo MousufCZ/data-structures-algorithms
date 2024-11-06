@@ -16,5 +16,5 @@ class Solution:
 
 if __name__ == "__main__":
     testSolution = Solution()
-    prices = [27, 51, 35, 38, 64, 24, 12, 49, 23, 45, 2]
-    testSolution.maxProfit(prices)
+    prices = [27, 51, 21, 38, 64]
+    testSolution.maxProfit(prices) 
