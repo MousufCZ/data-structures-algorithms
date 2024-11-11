@@ -3,6 +3,7 @@
 #include <stdio.h>   // Include the header for printf
 // https://cs.stackexchange.com/questions/21312/problem-in-finding-the-floating-point-representation
 // Day 1: Working on C tutorial on Geek For Geeks [26th - 30th October]
+// Day 7: Working on C tutorial on Geek For Geeks [11th Nov]
 
 uint32_t float_to_binary(float num) {
     uint32_t result;
