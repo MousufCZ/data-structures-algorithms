@@ -2,10 +2,12 @@
 #include <string.h>  // Include the header for memcpy
 #include <stdio.h>   // Include the header for printf
 // https://cs.stackexchange.com/questions/21312/problem-in-finding-the-floating-point-representation
-// Day 1: Working on C tutorial on Geek For Geeks [26th - 30th October]
-// Day 7: Working on C tutorial on Geek For Geeks [11th Nov]
-// Day 8: Working on C tutorial on Geek For Geeks [13th Nov]
-// Day 9: Working on C tutorial on Geek For Geeks [14th Nov]
+// Day 01: Working on C tutorial on Geek For Geeks [26th - 30th October]
+// Day 07: Working on C tutorial on Geek For Geeks [11th Nov]
+// Day 08: Working on C tutorial on Geek For Geeks [13th Nov]
+// Day 09: Working on C tutorial on Geek For Geeks [14th Nov]
+// Day 10: Working on C tutorial on Geek For Geeks [15th Nov]
+
 
 
 uint32_t float_to_binary(float num) {
