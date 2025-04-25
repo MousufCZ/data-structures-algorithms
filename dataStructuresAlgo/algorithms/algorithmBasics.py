@@ -64,3 +64,10 @@ class MaxProductTest:
                 j = j + 1
             i = i + 1
         return max
+
+
+
+if __name__ == "__main__":
+    arr = [15, 42, 7, 85, 19]
+    result = find_largest_element(arr)
+    print(result)  # Output: 85    

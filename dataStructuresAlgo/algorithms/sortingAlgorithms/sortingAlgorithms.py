@@ -1,7 +1,7 @@
 import random
 
 # Sequential Search
-class sequentialSearch:
+class SequentialSearch:
     def sequentialSearch(self, a, x):
         i = 0
         while i < len(a) and a[i] != x:
