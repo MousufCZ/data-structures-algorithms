@@ -8,7 +8,18 @@ class Solution:
 
         return []
 
+class Optimised:
+    def twoSumOptimised(self, nums: List[int], target: int) -> List[int]:
+        dic = {}
+        for i in range(len(nums)):
+            # dic = {index: value for index, value in i}
+            dic.update
+        return print(dic)
+
 if __name__ == "__main__":
-    testSolution = Solution()
     nums = [1, 2, 7]
-    testSolution.twoSum(nums, target=3)
+    testSolution = Solution()
+    # testSolution.twoSum(nums, target=3)
+    testSolution2 = Optimised()
+    testSolution2.twoSumOptimised(nums, target=3)
+    
