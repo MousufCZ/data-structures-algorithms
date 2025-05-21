@@ -10,15 +10,30 @@ class Solution:
 
 class Optimised:
     def twoSumOptimised(self, nums: List[int], target: int) -> List[int]:
-        dic = {}
+        # dic = {}
+        # for i in range(len(nums)):
+        #     # dic = {index: value for index, value in i}
+        #     dic.update
+        # return print(dic)
+
+        numMap = {}
+        # n = len(nums)
+
+        # Build the hash table
         for i in range(len(nums)):
-            # dic = {index: value for index, value in i}
-            dic.update
-        return print(dic)
+            numMap[nums[i]] = i
+
+        # Find the complement
+        for i in range(len(nums)):
+            complement = target - nums[i]
+            if complement in numMap and numMap[complement] != i:
+                return print([i, numMap[complement]])
+
+        return []  # No solution found
 
 if __name__ == "__main__":
     nums = [1, 2, 7]
-    testSolution = Solution()
+    # testSolution = Solution() 
     # testSolution.twoSum(nums, target=3)
     testSolution2 = Optimised()
     testSolution2.twoSumOptimised(nums, target=3)
