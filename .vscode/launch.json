@@ -2,13 +2,20 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "AddTwoNumbers",
+      "request": "launch",
+      "mainClass": "AddTwoNumbers",
+      "projectName": "data-structures-algorithms_7454755d"
+    },
+    {
       "name": "(gdb) Launch",
       "type": "cppdbg",
       "request": "launch",
-      "program": "/home/mousuf/dsa/decTo32BitRep/hello", // Absolute path to your compiled executable
+      "program": "/home/mousuf/dsa/decTo32BitRep/hello",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "/home/mousuf/dsa/decTo32BitRep", // Absolute path to your project directory
+      "cwd": "/home/mousuf/dsa/decTo32BitRep",
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
@@ -31,7 +38,7 @@
       "cwd": "/home/mousuf/dsa/decTo32BitRep",
       "program": "/home/mousuf/dsa/decTo32BitRep/build/Debug/outDebug",
       "MIMode": "gdb",
-      "miDebuggerPath": "/usr/bin/gdb", // Correct path to gdb (typically installed here)
+      "miDebuggerPath": "/usr/bin/gdb",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
