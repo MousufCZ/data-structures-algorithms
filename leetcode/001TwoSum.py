@@ -27,7 +27,7 @@ class Optimised:
         for i in range(len(nums)):
             complement = target - nums[i]
             if complement in numMap and numMap[complement] != i:
-                return print([i, numMap[complement]])
+                return print(id([i, numMap[complement]]))
 
         return []  # No solution found
 
