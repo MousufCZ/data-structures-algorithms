@@ -1,14 +1,5 @@
 import random
 
-# Sequential Search
-class SequentialSearch:
-    def sequentialSearch(self, a, x):
-        i = 0
-        while i < len(a) and a[i] != x:
-            i = i + 1
-        return i
-
-
 # Fisher-Yates Shuffle Algorithm
 def fisher_yates_shuffle(arr):
     n = len(arr)
@@ -20,7 +11,7 @@ def fisher_yates_shuffle(arr):
 
 
 # Selection Sort Algorithm
-class selectionSort:
+class SelectionSort:
     #@staticmethod  
     def selectionSort(self, arr):
         n = len(arr)
